@@ -1,7 +1,5 @@
 FROM jacekmarchwicki/android:ubuntu-16-04-java7-8
 
-RUN apt-get update && apt-get install curl
-
 RUN apt-get -y install --no-install-recommends \
     curl \
     ruby2.4 \
