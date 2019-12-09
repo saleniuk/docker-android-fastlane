@@ -28,6 +28,12 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 # Install Deps
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y --force-yes unzip expect git wget libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 python curl libqt5widgets5 && apt-get clean && rm -fr /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Install Make
+RUN apt-get update && apt-get install make
+
+# Install Fastlane
+RUN gem install fastlane -NV
+
 # Copy install tools
 COPY tools /opt/tools
 ENV PATH ${PATH}:/opt/tools
