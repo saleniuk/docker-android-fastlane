@@ -17,5 +17,7 @@ RUN gem install json -v '2.2.0'
 # Install Fastlane
 RUN gem install fastlane -NV
 
+RUN fastlane -v
+
 # Install Make
 RUN apt-get update && apt-get install make
