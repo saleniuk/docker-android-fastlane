@@ -12,6 +12,8 @@ RUN apt-get -y install --no-install-recommends \
     file \
     ssh
 
+RUN gem install json -v '2.2.0'
+
 # Install Fastlane
 RUN gem install fastlane -NV
 
