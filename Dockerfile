@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install sudo -y
 
 RUN apt-add-repository ppa:brightbox/ruby-ng
 RUN apt-get update
+RUN sudo apt update
 RUN apt-get -y install --no-install-recommends \
     curl \
     ruby2.6 \
