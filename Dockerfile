@@ -6,8 +6,8 @@ RUN apt-add-repository ppa:brightbox/ruby-ng
 RUN apt-get update
 RUN apt-get -y install --no-install-recommends \
     curl \
-    ruby2.5 \
-    ruby2.5-dev \
+    ruby2.4 \
+    ruby2.4-dev \
     build-essential \
     file \
     ssh
